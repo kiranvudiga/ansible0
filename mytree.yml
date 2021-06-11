@@ -1,0 +1,13 @@
+---
+- hosts: all
+  become: yes
+  tasks: 
+  - name: i want to install tree
+    apt:
+     name: tree
+     state: present
+
+  - name: tree service
+    service:
+     name: tree
+     state: started   
