@@ -19,11 +19,11 @@
       name: httpd
       state: present
     when: ansible_os_family=="RedHat"
-   
-  - name: i want install webserver on redhat node
     service:
       name: httpd
       state: started
     when: ansible_os_family=="RedHat"
+   
+  
     
 
