@@ -10,6 +10,4 @@
 172.31.17.54
 172.31.12.252
 
-[myservers:vars]
-myubuntu=apache2
-myredhat=httpd
+
