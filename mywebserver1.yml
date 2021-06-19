@@ -22,7 +22,7 @@
 
   - name: i want install webserver on redhat node
     service:
-      name: {{myredhat}}
+      name: "{{myredhat}}""
       state: started
     when: ansible_os_family=="RedHat"
    
