@@ -1,0 +1,18 @@
+---
+- hosts: 172.31.17.54
+  become: yes
+  vars:
+    myvar1: git 
+    myvar2: tree
+
+  tasks:
+   - name: display my var1  
+     debug: 
+      msg: "{{myvar1}}"
+      register: myresult
+
+   - name: display my var1  
+     apt: 
+      name: "{{myvar1}}"  
+      statw: present 
+
