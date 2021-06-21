@@ -1,6 +1,5 @@
 ---
 - hosts: 172.31.17.54
   become: yes
-  tasks:
-    roles:
-     - {role: mywebrole,when: ansible_os_family=="Debian"}
+  roles:
+   - {role: mywebrole,when: ansible_os_family=="Debian"}
