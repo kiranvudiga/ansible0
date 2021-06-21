@@ -9,10 +9,10 @@
    - name: display my var1  
      debug: 
       msg: "{{myvar1}}"
-      
+
 
    - name: display my var1  
      apt: 
       name: "{{myvar1}}"  
-      statw: present 
+      state: present 
 
