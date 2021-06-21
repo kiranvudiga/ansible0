@@ -10,6 +10,6 @@
 
   - name: copy index into node
     template:
-     src: myindex.j2
-     dist: /var/www/html/index.html   
+       src: myindex.j2
+       dist: /var/www/html/index.html   
    
