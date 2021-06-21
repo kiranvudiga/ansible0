@@ -1,2 +1,12 @@
 ---
 # tasks file for mywebrole
+- name: i want install webserver on ubuntu
+  apt:
+   name: apache2
+   state: present
+
+- name: i want install tree on ubuntu
+  apt:
+   name: tree
+   state: present   
+ 
