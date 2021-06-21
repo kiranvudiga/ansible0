@@ -1,0 +1,5 @@
+---
+- name: create afile on ansible node ubuntu 172.31.17.54
+   file:
+    path: /home/ubuntu/myfilehandling
+    state: touch
