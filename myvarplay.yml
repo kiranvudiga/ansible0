@@ -9,7 +9,7 @@
    - name: display my var1  
      debug: 
       msg: "{{myvar1}}"
-      register: myresult
+      
 
    - name: display my var1  
      apt: 
