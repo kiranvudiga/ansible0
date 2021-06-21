@@ -11,5 +11,5 @@
   - name: copy index into node
     template:
        src: myindex.j2
-       dist: /var/www/html/index.html   
+       dest: /var/www/html/index.html   
    
