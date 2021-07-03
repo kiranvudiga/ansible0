@@ -1,0 +1,17 @@
+---
+- name: add a login to our Tomcat
+  template:
+    src: templates/tomuser.j2
+    dest: /opt/tomcat/conf/tomcat-users.xml
+
+- name: access to manager
+  template:
+    src: templates/managercontext.j2
+    dest: /opt/tomcat/webapps/manager/META-INF/context.xml
+
+- name: access to hostmanager
+  template:
+    src: templates/hostmanagercontext.j2
+    dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml
+
+    
