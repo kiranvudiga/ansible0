@@ -13,6 +13,14 @@
       name: "{{myjavaRedhat}}"
       state: present
     when: ansible_os_family=="RedHat"
+    notify: 
+    - restartapache   
+   
+  handlers:
+  - name: restartapache
+    apt:
+      name: "{{myjavaUbuntu}}"
+      state: restarted 
 
  
    
