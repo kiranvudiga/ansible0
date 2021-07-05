@@ -12,8 +12,8 @@
     template:
        src: myindex.j2
        dest: /var/www/html/index.html   
-     notify: 
-     - restartapache   
+    notify: 
+    - restartapache   
    
   handlers:
   - name: restartapache
