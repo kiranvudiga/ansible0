@@ -12,12 +12,5 @@
     template:
        src: myindex1.j2
        dest: /var/www/html/index.html   
-    notify: 
-    - restartapache   
    
-  handlers:
-  - name: restartapache
-    apt:
-      name: apache2
-      state: restarted 
     
