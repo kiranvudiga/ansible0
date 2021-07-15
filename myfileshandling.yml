@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.14.245
+- hosts: 172.31.23.207
   become: yes
   tasks:
   - include_tasks: myfile.yml
@@ -21,5 +21,5 @@
       name: apache2
       state: restarted 
 
-      
+
     
