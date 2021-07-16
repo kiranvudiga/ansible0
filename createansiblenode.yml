@@ -6,7 +6,7 @@
      ec2:
        key_name: raviv
        instance_type: t2.micro
-       region: us-east-2a
+       region: us-east-2
        image: ami-0bc035ba9f45b0eb4
        wait: yes
        group: launch-wizard-28
