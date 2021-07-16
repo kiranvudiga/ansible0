@@ -1,0 +1,17 @@
+---
+- hosts: localhost
+  become: yes
+  tasks: 
+   - name: create ansible nodes
+     ec2:
+       key_name: raviv
+       instance_type: t2.micro
+       region: us-east-2a
+       image: ami-0bc035ba9f45b0eb4
+       wait: yes
+       group: launch-wizard-28
+       count: 3
+       vpc_subnet_id: subnet-8a0ab3e1
+       assign_public_ip: yes
+       instance_tags:
+        Name: AnsibleUbuntuNode 
