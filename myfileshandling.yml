@@ -5,7 +5,7 @@
   - include_tasks: myfile.yml
   - name: install web server
     apt:
-     name: apache2
+     name: httpd
      state: present
 
   - name: copy index into node
@@ -18,7 +18,7 @@
   handlers:
   - name: restartapache
     apt:
-      name: apache2
+      name: httpd
       state: restarted 
 
 
